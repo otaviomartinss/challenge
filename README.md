@@ -85,3 +85,6 @@ Banco de dados atualizado
 v3
 GET, POST, PUT, DELETE 100%
 Table movimentacoes atualizada
+
+v4
+Atualizei schema.prisma

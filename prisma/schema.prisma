@@ -18,3 +18,12 @@ model Movimentacao {
 
   @@map("movimentacoes")
 }
+
+model Saldo {
+  id                String      @id @default(uuid())
+  saldo             Float
+  saldoAnterior     Float
+  dataAtualizacao   DateTime    @updatedAt
+  
+  @@map("saldo")
+}
