@@ -77,3 +77,7 @@ Um estudante a fim de poupar gastos e controlar suas finanças pessoais resolveu
 ## Descrição das versões
 v1 
 Upload com todos os arquivos para o git
+
+v2
+GET, POST, PUT conectando com o banco
+Banco de dados atualizado

@@ -13,11 +13,16 @@ export class MovimentacaoService {
     return movimentacao
   }
 
+
+
+
+
+
   async findAll() {
     return this.prisma.movimentacao.findMany()
   }
 
-  async update(id: number, data: MovimentacaoDTO) {
+  async update(id: string, data: MovimentacaoDTO) {
     const movimentacaoExiste = await this.prisma.movimentacao.findUnique({
       where: {
         id,
@@ -34,7 +39,7 @@ export class MovimentacaoService {
     })
   }
 
-  async delete(id: number) {
+  async delete(id: string) {
     const movimentacaoExiste = await this.prisma.movimentacao.findUnique({
       where: {
         id,
