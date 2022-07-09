@@ -15,3 +15,9 @@ export type MovimentacaoDTO = {
     dataAtualizacao: Date
 }
 
+export type SaldoDTO = {
+    id: string
+    saldo: number
+    saldoAnterior: number
+    dataAtualizacao: Date
+}

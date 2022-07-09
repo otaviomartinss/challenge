@@ -91,3 +91,6 @@ Atualizei schema.prisma
 
 v5
 Filtragem das datas
+
+v6
+Table, Service e Controller do saldo

@@ -6,9 +6,11 @@ import { MovimentacaoController } from './movimentacao.controller';
 import { MovimentacaoService } from './movimentacao.service';
 import { FinalController } from './final.controller';
 import { FinalService } from './final.service';
+import { SaldoController } from './saldo.controller';
+import { SaldoService } from './saldo.service';
 
 @Module({
-  controllers: [MovimentacaoController, InicialController, FinalController],
-  providers: [MovimentacaoService, InicialService, FinalService, PrismaService],
+  controllers: [MovimentacaoController, InicialController, FinalController, SaldoController],
+  providers: [PrismaService, MovimentacaoService, InicialService, FinalService, SaldoService],
 })
 export class CarteiraModule {}
