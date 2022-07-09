@@ -16,6 +16,11 @@ export class MovimentacaoController {
     return this.movimentacaoService.findMany()
   }
 
+  @Get(':pular')
+  async findPagination(pular: number){
+    return this.movimentacaoService.findPagination(pular)
+  }
+  
   @Put(':id')
   async update(@Param('id') id: string, @Body() data: MovimentacaoDTO) {
     return this.movimentacaoService.update(id, data)
@@ -26,5 +31,4 @@ export class MovimentacaoController {
     return this.movimentacaoService.delete(id)
   }
 
-  
 }

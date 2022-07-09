@@ -21,6 +21,16 @@ export class MovimentacaoService {
     })
     return movimentacao
   }
+  async findPagination(pular: number) {
+    const movimentacao = this.prisma.movimentacao.findMany({
+      skip: pular,
+      take: 4,
+      orderBy: [{
+        dataCadastro: 'asc'
+      }]
+    })
+    return movimentacao
+  }
 
   async update(id: string, data: MovimentacaoDTO) {
     const movimentacaoExiste = await this.prisma.movimentacao.findUnique({

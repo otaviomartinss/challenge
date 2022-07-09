@@ -13,13 +13,18 @@ export class SaldoService {
     return saldo
   }
 
-  async findFirst() {
-    const movimentacao = this.prisma.saldo.findFirst({
-      orderBy: {
-        dataAtualizacao: 'desc'
-      }
-    })
-    return movimentacao
+  // async findFirst() {
+  //   const movimentacao = this.prisma.saldo.findFirst({
+  //     orderBy: {
+  //       dataAtualizacao: 'desc'
+  //     }
+  //   })
+  //   return movimentacao
+  // }
+
+  async findAll() {
+    const getSaldo = await this.prisma.$queryRaw`SELECT SUM(valor) FROM movimentacoes;`
+    return getSaldo
   }
 
 }

@@ -6,15 +6,20 @@ import { SaldoService } from './saldo.service';
 export class SaldoController {
   constructor(private readonly saldoService: SaldoService) {}
 
+  @Get()
+  async findAll(){
+    return this.saldoService.findAll()
+  }
+
   @Post()
   async create(@Body() data: SaldoDTO) {
     return this.saldoService.create(data)
   }
 
-  @Get()
-  async findFirst(){
-    return this.saldoService.findFirst()
-  }
+  // @Get()
+  // async findFirst(){
+  //   return this.saldoService.findFirst()
+  // }
 
   
 }
