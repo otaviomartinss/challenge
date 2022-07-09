@@ -88,3 +88,6 @@ Table movimentacoes atualizada
 
 v4
 Atualizei schema.prisma
+
+v5
+Filtragem das datas

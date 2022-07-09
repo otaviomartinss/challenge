@@ -13,13 +13,13 @@ export class MovimentacaoService {
     return movimentacao
   }
 
-
-
-
-
-
-  async findAll() {
-    return this.prisma.movimentacao.findMany()
+  async findMany() {
+    const movimentacao = this.prisma.movimentacao.findMany({
+      orderBy: [{
+        dataCadastro: 'asc'
+      }]
+    })
+    return movimentacao
   }
 
   async update(id: string, data: MovimentacaoDTO) {

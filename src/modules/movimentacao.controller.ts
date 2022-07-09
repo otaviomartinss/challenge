@@ -12,8 +12,8 @@ export class MovimentacaoController {
   }
 
   @Get()
-  async findAll(){
-    return this.movimentacaoService.findAll()
+  async findMany(){
+    return this.movimentacaoService.findMany()
   }
 
   @Put(':id')

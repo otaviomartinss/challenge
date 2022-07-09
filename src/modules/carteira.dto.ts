@@ -11,6 +11,7 @@ export type MovimentacaoDTO = {
     tipo: string
     valor: number
     //ftipo()
-    data: Date
+    dataCadastro: Date
+    dataAtualizacao: Date
 }
 
