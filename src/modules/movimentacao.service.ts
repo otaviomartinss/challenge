@@ -16,14 +16,15 @@ export class MovimentacaoService {
   async findMany() {
     const movimentacao = this.prisma.movimentacao.findMany({
       orderBy: [{
-        dataCadastro: 'asc'
+        dataCadastro: 'asc',
       }]
     })
     return movimentacao
   }
-  async findPagination(pular: number) {
+  
+  async findPagination(skip: number) {
     const movimentacao = this.prisma.movimentacao.findMany({
-      skip: pular,
+      skip: +skip,
       take: 4,
       orderBy: [{
         dataCadastro: 'asc'

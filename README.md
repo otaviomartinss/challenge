@@ -98,3 +98,11 @@ Table, Service e Controller do saldo
 v7
 Consulta de saldo
 Paginação
+
+v8
+Atualização Service movimentação
+Atualização Controller movimentação
+Atualização Service saldo
+Atualização Controller saldo
+Atualização DTO
+Aualização schema.prisma

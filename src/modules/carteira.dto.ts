@@ -1,8 +1,3 @@
-// function ftipo(tipo,valor) {
-//     if (tipo != "receita") {
-//         valor == -valor
-//     }
-// }
 export type MovimentacaoDTO = {
     
     id: string
@@ -10,14 +5,6 @@ export type MovimentacaoDTO = {
     descricao: string
     tipo: string
     valor: number
-    //ftipo()
     dataCadastro: Date
-    dataAtualizacao: Date
-}
-
-export type SaldoDTO = {
-    id: string
-    saldo: number
-    saldoAnterior: number
     dataAtualizacao: Date
 }

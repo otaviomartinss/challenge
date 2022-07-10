@@ -16,9 +16,9 @@ export class MovimentacaoController {
     return this.movimentacaoService.findMany()
   }
 
-  @Get(':pular')
-  async findPagination(pular: number){
-    return this.movimentacaoService.findPagination(pular)
+  @Get(':skip')
+  async findPagination(@Param('skip') skip: number){
+    return this.movimentacaoService.findPagination(skip)
   }
   
   @Put(':id')
@@ -30,5 +30,4 @@ export class MovimentacaoController {
   async delete(@Param('id') id: string) {
     return this.movimentacaoService.delete(id)
   }
-
 }
