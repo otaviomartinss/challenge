@@ -4,26 +4,29 @@
 
 ### Comandos
 
-Com o node já instalado, conecte o banco de dados pelo arquivo .env (deixei alguns exemplos), e caso use outro banco de dados, altere no arquivo /prisma/schema.prisma
+Com o node já instalado, conecte o banco de dados pelo arquivo .env (deixei alguns exemplos), e caso use outro banco de dados que não seja o postgres, altere no arquivo /prisma/schema.prisma
 
  basta rodar os comandos abaixo:
 
 `git clone https://github.com/otaviomartinss/challenge.git`
 
-`npx prisma migrate dev`
-
 `npm install`
 
 `npm run build`
 
+`npx prisma migrate dev`
+
 `npm run start:dev`
 
-Pronto, agora é só entrar no insomnia!
+Pronto, agora é só entrar no insomnia, o collection está junto ao projeto.
+
+O cache tem um TTL de 30 segundos, por isso após fazer post, update e delete, ele não vai refletir imediatamente no get. O TTL também pode ser alterado em /src/modules/carteira.module.ts, após a implementação do cache, o tempo de resposta das requisições reduziu cerca de 40 a 70%, com isso, temos uma api mais rápida e com menos requisições ao banco de dados.
 
 ### Endpoints
 
 /api/movimentacao<br />
   POST adiciona movimentação<br />
+  Obs: No "tipo" colocar se é "receita" ou "despesa", se for despesa no valor colocar negativo ex: -369.50
   GET lista todas as movimentações<br />
 
 /api/movimentacao/:id<br />
@@ -43,7 +46,6 @@ Pronto, agora é só entrar no insomnia!
 
 /api/saldo<br />
   GET consulta saldo da carteira
-
 
 
 ## Descrição das versões
@@ -105,7 +107,12 @@ update README.md<br />
 v16<br />
 Atualização saldo<br />
 
-
+v17<br />
+cache<br />
+Atualização consulta de saldo<br />
+Collection<br />
+Atualização gitignore<br />
+Atualização packages<br />
 
 
 
