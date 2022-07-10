@@ -6,7 +6,7 @@
 
 Com o node já instalado, basta rodar os comandos abaixo:
 
-`git clone https://github.com/otaviomartinss/node.js-challenge.git`
+`git clone https://github.com/otaviomartinss/challenge.git`
 
 `npm install`
 
@@ -91,13 +91,9 @@ update README.md<br />
 v13<br />
 update README.md<br />
 
-
-
-
-
-
-
-
+v14<br />
+add collection<br />
+update README.md<br />
 
 
 
@@ -178,10 +174,4 @@ Um estudante a fim de poupar gastos e controlar suas finanças pessoais resolveu
 * Está com alguma dificuldade, encontrou algum problema no desafio ou tem alguma sugestão pra gente? Crie uma issue e descreva o que achar necessário ou entre em contato.
 
 ### Boa sorte! 🍀
-
-
-
-
-
-
 
