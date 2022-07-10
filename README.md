@@ -6,11 +6,13 @@
 
 Com o node já instalado, basta rodar os comandos abaixo:
 
-npm install
+`git clone https://github.com/otaviomartinss/node.js-challenge.git`
 
-npm run build
+`npm install`
 
-npm run start:dev
+`npm run build`
+
+`npm run start:dev`
 
 Pronto, agora é só entrar no insomnia!
 
@@ -83,7 +85,8 @@ v10
 v11
 update README.md
 
-
+v12
+update README.md
 
 
 
