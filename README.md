@@ -4,9 +4,13 @@
 
 ### Comandos
 
-Com o node já instalado, basta rodar os comandos abaixo:
+Com o node já instalado, conecte o banco de dados pelo arquivo .env (deixei alguns exemplos), e caso use outro banco de dados, altere no arquivo /prisma/schema.prisma
+
+ basta rodar os comandos abaixo:
 
 `git clone https://github.com/otaviomartinss/challenge.git`
+
+`npx prisma migrate dev`
 
 `npm install`
 
@@ -95,7 +99,8 @@ v14<br />
 add collection<br />
 update README.md<br />
 
-
+v15<br />
+update README.md<br />
 
 
 
