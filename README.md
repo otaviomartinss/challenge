@@ -18,76 +18,78 @@ Pronto, agora é só entrar no insomnia!
 
 ### Endpoints
 
-/api/movimentacao
-  POST adiciona movimentação
-  GET lista todas as movimentações
+/api/movimentacao<br />
+  POST adiciona movimentação<br />
+  GET lista todas as movimentações<br />
 
-/api/movimentacao/:id
-  PUT atualiza movimentação
-  DELETE deleta movimentação
+/api/movimentacao/:id<br />
+  PUT atualiza movimentação<br />
+  DELETE deleta movimentação<br />
 
-/api/movimentacao/:page
-  GET utiliza paginação para listar as movimentações troque :page pelo número da página que deseja acessar (cada página vai listar 10 movimentações)
+/api/movimentacao/:page<br />
+  GET utiliza paginação para listar as movimentações troque :page pelo número da página que deseja acessar (cada página vai listar 10 movimentações)<br />
 
-/api/inicial/:dataInicial/:dataFinal
-  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais antiga para a mais recente (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)
-  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)
+/api/inicial/:dataInicial/:dataFinal<br />
+  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais antiga para a mais recente (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)<br />
+  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)<br />
 
-/api/final/:dataInicial/:dataFinal
-  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais recente para a mais antiga (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)
-  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)
+/api/final/:dataInicial/:dataFinal<br />
+  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais recente para a mais antiga (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)<br />
+  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)<br />
 
-/api/saldo
+/api/saldo<br />
   GET consulta saldo da carteira
 
 
 
 ## Descrição das versões
-v1 
-Upload com todos os arquivos para o git
+v1 <br />
+Upload com todos os arquivos para o git<br />
 
-v2
-GET, POST, PUT conectando com o banco
-Banco de dados atualizado
+v2<br />
+GET, POST, PUT conectando com o banco<br />
+Banco de dados atualizado<br />
 
-v3
-GET, POST, PUT, DELETE 100%
-Table movimentacoes atualizada
+v3<br />
+GET, POST, PUT, DELETE 100%<br />
+Table movimentacoes atualizada<br />
 
-v4
-Atualizei schema.prisma
+v4<br />
+Atualizei schema.prisma<br />
 
-v5
-Filtragem das datas
+v5<br />
+Filtragem das datas<br />
 
-v6
-Table, Service e Controller do saldo
+v6<br />
+Table, Service e Controller do saldo<br />
 
-v7
-Consulta de saldo
-Paginação
+v7<br />
+Consulta de saldo<br />
+Paginação<br />
 
-v8
-Atualização Service movimentação
-Atualização Controller movimentação
-Atualização Service saldo
-Atualização Controller saldo
-Atualização DTO
-Aualização schema.prisma
+v8<br />
+Atualização Service movimentação<br />
+Atualização Controller movimentação<br />
+Atualização Service saldo<br />
+Atualização Controller saldo<br />
+Atualização DTO<br />
+Aualização schema.prisma<br />
 
-v9
-Atualização dos Services e Controllers
-Atualização filtragem por data e paginação nos endpoints
+v9<br />
+Atualização dos Services e Controllers<br />
+Atualização filtragem por data e paginação nos endpoints<br />
 
-v10
-.env para testes
+v10<br />
+.env para testes<br />
 
-v11
-update README.md
+v11<br />
+update README.md<br />
 
-v12
-update README.md
+v12<br />
+update README.md<br />
 
+v13<br />
+update README.md<br />
 
 
 
