@@ -1,5 +1,106 @@
 > ![Logo Kinvo](https://github.com/cbfranca/kinvo-front-end-test/blob/master/logo.svg)
 
+## Instruções para executar
+
+### Comandos
+
+Com o node já instalado, basta rodar os comandos abaixo:
+
+npm install
+
+npm run build
+
+npm run start:dev
+
+Pronto, agora é só entrar no insomnia!
+
+### Endpoints
+
+/api/movimentacao
+  POST adiciona movimentação
+  GET lista todas as movimentações
+
+/api/movimentacao/:id
+  PUT atualiza movimentação
+  DELETE deleta movimentação
+
+/api/movimentacao/:page
+  GET utiliza paginação para listar as movimentações troque :page pelo número da página que deseja acessar (cada página vai listar 10 movimentações)
+
+/api/inicial/:dataInicial/:dataFinal
+  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais antiga para a mais recente (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)
+  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)
+
+/api/final/:dataInicial/:dataFinal
+  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais recente para a mais antiga (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)
+  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)
+
+/api/saldo
+  GET consulta saldo da carteira
+
+
+
+## Descrição das versões
+v1 
+Upload com todos os arquivos para o git
+
+v2
+GET, POST, PUT conectando com o banco
+Banco de dados atualizado
+
+v3
+GET, POST, PUT, DELETE 100%
+Table movimentacoes atualizada
+
+v4
+Atualizei schema.prisma
+
+v5
+Filtragem das datas
+
+v6
+Table, Service e Controller do saldo
+
+v7
+Consulta de saldo
+Paginação
+
+v8
+Atualização Service movimentação
+Atualização Controller movimentação
+Atualização Service saldo
+Atualização Controller saldo
+Atualização DTO
+Aualização schema.prisma
+
+v9
+Atualização dos Services e Controllers
+Atualização filtragem por data e paginação nos endpoints
+
+v10
+.env para testes
+
+v11
+update README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Kinvo - Desafio Back-end
 
@@ -74,71 +175,8 @@ Um estudante a fim de poupar gastos e controlar suas finanças pessoais resolveu
 ### Boa sorte! 🍀
 
 
-## Descrição das versões
-v1 
-Upload com todos os arquivos para o git
-
-v2
-GET, POST, PUT conectando com o banco
-Banco de dados atualizado
-
-v3
-GET, POST, PUT, DELETE 100%
-Table movimentacoes atualizada
-
-v4
-Atualizei schema.prisma
-
-v5
-Filtragem das datas
-
-v6
-Table, Service e Controller do saldo
-
-v7
-Consulta de saldo
-Paginação
-
-v8
-Atualização Service movimentação
-Atualização Controller movimentação
-Atualização Service saldo
-Atualização Controller saldo
-Atualização DTO
-Aualização schema.prisma
-
-v9
-Atualização dos Services e Controllers
-Atualização filtragem por data e paginação nos endpoints
-
-v10
-.env para testes
 
 
 
 
-## Instruções para executar
 
-### Endpoints
-
-/api/movimentacao
-  POST adiciona movimentação
-  GET lista todas as movimentações
-
-/api/movimentacao/:id
-  PUT atualiza movimentação
-  DELETE deleta movimentação
-
-/api/movimentacao/:page
-  GET utiliza paginação para listar as movimentações troque :page pelo número da página que deseja acessar (cada página vai listar 10 movimentações)
-
-/api/inicial/:dataInicial/:dataFinal
-  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais antiga para a mais recente (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)
-  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)
-
-/api/final/:dataInicial/:dataFinal
-  GET filtra e lista todas as movimentações entre a data inicial e a data final da mais recente para a mais antiga (para usar paginação é só adicionar /:page e trocar :page pelo número da página que deseja acessar como no anterior)
-  Obs: use as datas no formato => ano-mes-diaT03:00:00.000Z (pode alterar o horário também)
-
-/api/saldo
-  GET consulta saldo da carteira
