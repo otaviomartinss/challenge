@@ -22,10 +22,10 @@ export class MovimentacaoService {
     return movimentacao
   }
   
-  async findPagination(skip: number) {
+  async findPagination(page: number) {
     const movimentacao = this.prisma.movimentacao.findMany({
-      skip: +skip,
-      take: 4,
+      skip: (+page-1)*10,
+      take: 10,
       orderBy: [{
         dataCadastro: 'asc'
       }]

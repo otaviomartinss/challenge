@@ -1,5 +1,4 @@
 export type MovimentacaoDTO = {
-    
     id: string
     nome: string
     descricao: string

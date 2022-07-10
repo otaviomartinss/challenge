@@ -6,8 +6,8 @@ export class SaldoController {
   constructor(private readonly saldoService: SaldoService) {}
 
   @Get()
-  async findAll(){
-    return this.saldoService.findAll()
+  async findSaldo(){
+    return this.saldoService.findSaldo()
   }
 
 }

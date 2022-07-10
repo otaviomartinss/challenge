@@ -5,9 +5,9 @@ import { PrismaService } from 'src/database/PrismaService';
 export class SaldoService {
   constructor(private prisma: PrismaService){}
 
-  async findAll() {
-    const getSaldo = await this.prisma.$queryRaw`SELECT SUM(valor) FROM movimentacoes;`
-    return getSaldo
+  async findSaldo() {
+    const saldo = await this.prisma.$queryRaw`SELECT SUM(valor) FROM movimentacoes;`
+    return saldo
   }
 
 }

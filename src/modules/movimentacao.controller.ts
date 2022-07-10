@@ -16,9 +16,9 @@ export class MovimentacaoController {
     return this.movimentacaoService.findMany()
   }
 
-  @Get(':skip')
-  async findPagination(@Param('skip') skip: number){
-    return this.movimentacaoService.findPagination(skip)
+  @Get(':page')
+  async findPagination(@Param('page') page: number){
+    return this.movimentacaoService.findPagination(page)
   }
   
   @Put(':id')
