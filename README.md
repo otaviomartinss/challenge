@@ -111,6 +111,9 @@ v9
 Atualização dos Services e Controllers
 Atualização filtragem por data e paginação nos endpoints
 
+v10
+.env para testes
+
 
 
 
